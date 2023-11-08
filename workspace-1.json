@@ -1,0 +1,95 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1482,
+       "width": 2256,
+       "x": 0,
+       "y": 0
+    },
+    "marks": [],
+    "name": "i3: Layout saving in i3 — Mozilla Firefox",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "^firefox$",
+       // "instance": "^Navigator$",
+       // "machine": "^DJ$",
+       // "title": "^i3\\:\\ Layout\\ saving\\ in\\ i3\\ \\—\\ Mozilla\\ Firefox$",
+       // "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "marks": [],
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 600,
+               "width": 800,
+               "x": 0,
+               "y": 0
+            },
+            "marks": [],
+            "name": "Terminal-1",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Alacritty$",
+               // "instance": "^Alacritty$",
+               // "machine": "^DJ$",
+               "title": "^Terminal\\-1$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            // splith split container with 1 children
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splith",
+            "marks": [],
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 1,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 600,
+                       "width": 800,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "marks": [],
+                    "name": "Terminal-2",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                       "class": "^Alacritty$",
+                       // "instance": "^Alacritty$",
+                       // "machine": "^DJ$",
+                       "title": "^Terminal\\-2$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
